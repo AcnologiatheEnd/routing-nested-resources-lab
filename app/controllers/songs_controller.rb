@@ -1,6 +1,9 @@
 class SongsController < ApplicationController
   def index
+    if params[:artist_id]
+    else
     @songs = Song.all
+    end
   end
 
   def show
