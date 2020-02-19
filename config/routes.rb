@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :artists do 
-    resource :songs
+    resources :songs, only: []
   end
   resources :songs
 end
